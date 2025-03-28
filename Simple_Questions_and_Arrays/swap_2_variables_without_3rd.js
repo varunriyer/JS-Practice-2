@@ -1,0 +1,11 @@
+var a = 5;
+var b = 7;
+console.log(`Before swapping:`);
+console.log(`a = ${a}`);
+console.log(`b = ${b}`);
+a = a + b;
+b = a - b;
+a = a - b;
+console.log(`After swapping:`);
+console.log(`a = ${a}`);
+console.log(`b = ${b}`);
