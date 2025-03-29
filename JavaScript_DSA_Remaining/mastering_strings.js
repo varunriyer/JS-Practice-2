@@ -84,7 +84,11 @@ console.log(text.indexOf(/Day/i)); // returns -1 (indecOf() cannot be used to se
 console.log(text.search(/DAY/i)); // returns 2 and hence is used with regular expressions [but search cannot take the second value parameter to specify from where to start searching]
 
 var text = "Rain in SPAIN stays mainly in the plain";
-console.log(text.match(/ain/gi));
+console.log(text.match(/ain/gi)); //returns array containing results of matching string 
+
+var text = "Rain in SPAIN stays mainly in the plain";
+console.log(text.matchAll(/ain/gi)); //returns array containing results of matching string 
+
 
 
 
