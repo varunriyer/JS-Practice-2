@@ -74,3 +74,12 @@ console.log(arr.pop()); // 11
 arr.push(17);
 console.log(arr); //[7,8,9,10,17]
 
+//shift() and unshift() methods 
+arr = [3, 4, 5, 6, 7];
+console.log(arr.shift()); //.shift() displays the element which is removed from the array
+console.log(arr); //shift removes the first element of the array and shifts all other elements to a lower index
+
+arr = [2, 3, 4, 5];
+console.log(arr.unshift(1)); //this displays the leftmost element
+console.log(arr); //unshift adds an element to the first index of the array and moves all the remaining elements to the right 
+
