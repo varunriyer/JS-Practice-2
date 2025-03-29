@@ -86,9 +86,18 @@ console.log(text.search(/DAY/i)); // returns 2 and hence is used with regular ex
 var text = "Rain in SPAIN stays mainly in the plain";
 console.log(text.match(/ain/gi)); //returns array containing results of matching string 
 
-var text = "Rain in SPAIN stays mainly in the plain";
-console.log(text.matchAll(/ain/gi)); //returns array containing results of matching string 
+var str = "JavaScript1 JavaScript2";
+var regex = /JavaScript\d/g;
 
+var result = str.match(regex);
+console.log(result);
+
+var regex = /JavaScript(\d)/g;
+
+var results = str.matchAll(regex);
+for (var match of results) {
+    console.log(match);
+}
 
 
 
