@@ -15,6 +15,6 @@ console.log(`One of the main use cases of template strings is ${text} interpolat
 
 cp = 10;
 sp = 17;
-console.log(`The profit is ${sp - cp}`); //it also allows expressions in the string 
+console.log(`The profit is ${sp - cp}`); //it also allows expressions in the string as well
 
 
