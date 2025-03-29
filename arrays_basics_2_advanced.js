@@ -40,3 +40,11 @@ console.log(arr.toString()); //Output --> Apple,Orange,Banana,Grape
 arr = [1, 2, 3];
 console.log(typeof (arr)); //returns object 
 
+//Array Properties & Methods 
+arr = [1, 2, 3, 10, 7];
+console.log(arr.length); //returns length of array --> 5
+console.log(arr.sort()); // sort in an array sorts the array with respect to strings 
+
+//to sort numbers we need to create a function 
+console.log(arr.sort(function (a, b) { return a - b })); //ascending order
+console.log(arr.sort(function (a, b) { return b - a })); //descending order
