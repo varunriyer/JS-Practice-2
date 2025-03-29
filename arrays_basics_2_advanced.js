@@ -31,3 +31,8 @@ console.log(arr[1]); //cat
 // Changing an Array Element 
 arr[2] = "horse";
 console.log(arr);
+
+//Converting an Array to a String 
+arr = ["Apple", "Orange", "Banana", "Grape"];
+console.log(arr.toString()); //Output --> Apple,Orange,Banana,Grape
+
