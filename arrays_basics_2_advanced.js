@@ -48,3 +48,14 @@ console.log(arr.sort()); // sort in an array sorts the array with respect to str
 //to sort numbers we need to create a function 
 console.log(arr.sort(function (a, b) { return a - b })); //ascending order
 console.log(arr.sort(function (a, b) { return b - a })); //descending order
+
+//Math.min() and Math.max() on an Array 
+function minArray(arr) {
+    return Math.min.apply(null, arr);
+}
+console.log(minArray([1, 2, 3, -3, 99]));
+
+function maxArray(arr) {
+    return Math.max.apply(null, arr);
+}
+console.log(maxArray([9, 2, 1, 99, 101, -3]))
