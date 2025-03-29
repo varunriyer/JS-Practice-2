@@ -63,3 +63,8 @@ console.log(maxArray([9, 2, 1, 99, 101, -3]))
 // Sorting an Array in Random Order 
 arr = [1, 2, 3, 4, 5];
 console.log(arr.sort(function () { return 0.5 - Math.random() }));
+
+// Converting Array into String using join()
+arr = ["Big", "Small", "Medium"];
+console.log(arr.join("-->")); //joins the array elements and returns a string 
+
