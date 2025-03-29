@@ -68,3 +68,9 @@ console.log(arr.sort(function () { return 0.5 - Math.random() }));
 arr = ["Big", "Small", "Medium"];
 console.log(arr.join("-->")); //joins the array elements and returns a string 
 
+//Popping and Pushing Elements in an Array 
+arr = [7, 8, 9, 10, 11];
+console.log(arr.pop()); // 11
+arr.push(17);
+console.log(arr); //[7,8,9,10,17]
+
