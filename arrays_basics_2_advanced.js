@@ -36,3 +36,7 @@ console.log(arr);
 arr = ["Apple", "Orange", "Banana", "Grape"];
 console.log(arr.toString()); //Output --> Apple,Orange,Banana,Grape
 
+//Arrays are a special type of object 
+arr = [1, 2, 3];
+console.log(typeof (arr)); //returns object 
+
