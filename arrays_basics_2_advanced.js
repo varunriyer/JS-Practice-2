@@ -24,3 +24,10 @@ console.log(arr);
 arr = new Array(1, 2, 3);
 console.log(arr);
 
+//Accessing an Array Element 
+arr = ["dog", "cat", "fish"];
+console.log(arr[1]); //cat
+
+// Changing an Array Element 
+arr[2] = "horse";
+console.log(arr);
