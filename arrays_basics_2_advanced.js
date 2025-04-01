@@ -160,3 +160,8 @@ arr = [9, 8, 7, 6, 5];
 console.log(arr.slice(2, 4)); //returns elements from index 2 to 3(4-1) ; Output - [7,6]
 console.log(arr); //Original array unaffected
 
+// toString() - converts an array to a comma separated string
+
+arr = ["Jam", "Butter", "Honey"];
+console.log(arr.toString()); // Output - Jam,Butter,Honey
+
