@@ -179,3 +179,10 @@ arr = [0, 2, 4, 6, 8, 4];
 console.log(arr.lastIndexOf(4)) // returns 5
 console.log(arr.lastIndexOf(4, -2)); // returns 2 (we have specifed to start searching the element from -2 index i.e 8)
 
+// Array includes() function - used to check if an element is present in an array (including NaN, unlike indexOf)
+arr = [1, 2, 3, 4, 5, NaN];
+console.log(arr.includes(3)); //returns true
+console.log(arr.includes(10)); //returns false
+console.log(arr.includes(NaN)); //returns true
+console.log(arr.indexOf(NaN)); //returns -1 even though NaN is present in the array 
+
