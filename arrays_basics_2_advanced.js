@@ -208,3 +208,19 @@ temp = [27, 28, 30, 40, 42, 35, 30];
 console.log(temp.findLast(x => x > 40)); // returns 42 
 
 console.log(temp.findLastIndex(x => x > 40)); // returns 4 as it is the last index which satisifies the condition of the function
+
+// Sorting an Array 
+
+fruits = ["Banana", "Orange", "Kiwi", "Papaya", "Apple"];
+console.log(fruits.sort()); //sort() method sorts an array alphabetically
+arr = [5, 4, 3, 2, 1];
+console.log(arr.reverse()); // reverses the array 
+
+fruits = ["Banana", "Orange", "Kiwi", "Papaya", "Apple"];
+console.log(fruits.toSorted()); // does not change the original array 
+console.log(fruits);
+
+arr = [5, 4, 3, 2, 1];
+console.log(arr.toReversed()); //similar to above
+console.log(arr);
+
