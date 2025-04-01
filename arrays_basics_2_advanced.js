@@ -125,5 +125,29 @@ arr = [1, 2, 3, 4, 5];
 console.log(arr.flatMap(x => [x, x * 10])); //Output - [1,10,2,20,3,30,4,40,5,50];
 
 
+//Splicing and Slicing Arrays 
+
+//Splice()
+arr = ["Apple", "Orange", "Banana", "Kiwi"];
+console.log(arr.splice(2, 0, "Lemon", "Guava")); //Splice() can be used to add elements to an array. 2 indicates the position where the new elements need to be added, 0 indicates the number of elements to be deleted. Splice returns the array with deleted elements
+console.log(arr); //After above splice(), Output - [ 'Apple', 'Orange', 'Lemon', 'Guava', 'Banana', 'Kiwi' ]
+
+console.log(arr.splice(1, 2, "Lychee")); // Deleted elements, Output - [ 'Orange', 'Lemon' ]
+console.log(arr); // [ 'Apple', 'Lychee', 'Guava', 'Banana', 'Kiwi' ] 
+
+console.log(arr.splice(0, 2)); //Splice() can be used to remove elements ; Removes - [ 'Apple', 'Lychee' ]
+console.log(arr); //Output - [ 'Guava', 'Banana', 'Kiwi' ]
+
+//toSpliced()
+
+arr = [1, 2, 3, 4, 5];
+new_arr = arr.splice(2, 1); //The slice() fucntion slices out a piece of the original array into a new array but the orignal array is changed 
+console.log(new_arr);
+console.log(arr); //The original array is changed 
+
+arr = [1, 2, 3, 4, 5];
+new_arr = arr.toSpliced(2, 1); //The toSliced() fucntion removes the element and returns the new array without affecting the original array 
+console.log(new_arr);
+console.log(arr); //The original array is unchanged 
 
 
