@@ -140,16 +140,27 @@ console.log(JSON.parse(obj));
 
 //let keyword
 
-let x = 10;
-console.log(x);
+let num = 10;
+console.log(num);
 {
-    let x = 2;
-    console.log(x);
+    let num = 2;
+    console.log(num);
 }
 {
-    let x = 4;
-    console.log(x);
-    x = 7; //can update the value of variable even inside the same block
-    console.log(x);
-    // let x = 10; //--> cannot redeclare the value within the same block
+    let num = 4;
+    console.log(num);
+    num = 7; //can update the value of variable even inside the same block
+    console.log(num);
+    // let num = 10; //--> cannot redeclare the value within the same block
 }
+
+//const keyword
+
+const d = "a";
+console.log(d)
+// {
+//      const d = "b";
+//      d = "c"; --> cannot reassign value to a const variable even outside the scope 
+    
+// }
+
