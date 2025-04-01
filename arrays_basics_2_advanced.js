@@ -101,3 +101,9 @@ arr = [1, 2, 3, 4, 5];
 delete arr[0];
 console.log(arr); //using delete leaves undefined holes in the array - hence it is preferred to use pop() or shift() instead
 
+//Merging Arrays 
+arr1 = [0, 1, 2, 3, 4];
+arr2 = [5, 6, 7, 8, 9];
+arr3 = [-1];
+console.log(arr1.concat(arr2));
+console.log(arr2.concat(arr1, arr3));
