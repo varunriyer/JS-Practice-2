@@ -224,3 +224,10 @@ arr = [5, 4, 3, 2, 1];
 console.log(arr.toReversed()); //similar to above
 console.log(arr);
 
+//Numeric Sort
+
+arr = [3, 7, 1, -3, 8, 14, 19, 22, 12];
+console.log(arr.sort(function (a, b) { return a - b })); //returns sorted array in ascending order
+console.log(arr.sort(function (a, b) { return b - a })); // returns sorted array in descending order 
+
+
