@@ -201,3 +201,10 @@ console.log(arr.findIndex(even)); // returns 1 as the first index (2) is the fir
 function even(value, index, arr) {
     return value % 2 == 0;
 }
+
+//findLast() and findLastIndex() - similar to above 
+
+temp = [27, 28, 30, 40, 42, 35, 30];
+console.log(temp.findLast(x => x > 40)); // returns 42 
+
+console.log(temp.findLastIndex(x => x > 40)); // returns 4 as it is the last index which satisifies the condition of the function
