@@ -109,11 +109,20 @@ console.log(arr1.concat(arr2));
 console.log(arr2.concat(arr1, arr3)); //You can also pass a string as an argument to concat instead of an array
 
 //copyWithin() function - copies array elements to another position in an array 
+// This function overwrites the existing values, does not add items to the array, keeps the length the same
 
 arr = ["a", "b", "c", "d", "e"];
 console.log(arr.copyWithin(2, 0)); // Copy to index 2, all elements from index 0 ; Output - [ 'a', 'b', 'a', 'b', 'c' ]
 arr = ["a", "b", "c", "d", "e", "f"];
 console.log(arr.copyWithin(2, 0, 3)); // Copy to index 2, the elements from index 0 to 2(3-1) ; Output - [ 'a', 'b', 'a', 'b', 'c', 'f' ]
+
+//flat() function - to reduce the dimensionality of an array
+arr = [[1, 2], [3, 4], [5, 6]]
+console.log(arr.flat()); // flattens the array and returns output - [1,2,3,4,5,6]
+
+//flatMap() - maps all elements of an array and then creates a new array by flattening the array 
+arr = [1, 2, 3, 4, 5];
+console.log(arr.flatMap(x => [x, x * 10])); //Output - [1,10,2,20,3,30,4,40,5,50];
 
 
 
