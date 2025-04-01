@@ -91,3 +91,31 @@ per1.name = "James";
 per1.age = 22;
 console.log(per1);
 
+//Object.keys()
+var Car = {
+    brand: "Tata",
+    model: "SUV",
+    mileage: 22.7
+};
+
+console.log(Object.keys(Car));
+
+//bind() function
+
+var User = {
+    firstName: "James",
+    lastName: "Jones",
+    fullName: function () {
+        return this.firstName + " " + this.lastName;
+    }
+};
+
+console.log(User.fullName());
+
+var Guest = {
+    firstName: "John",
+    lastName: "David",
+};
+
+var fullName = User.fullName.bind(Guest);
+console.log(fullName());
