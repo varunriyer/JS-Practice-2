@@ -95,3 +95,9 @@ arr = ["hi", "bye", "thanks"];
 console.log(arr);
 arr[arr.length] = "welcome"; //easy way to append a new element to an array 
 console.log(arr);
+
+//Deleting elements from Array 
+arr = [1, 2, 3, 4, 5];
+delete arr[0];
+console.log(arr); //using delete leaves undefined holes in the array - hence it is preferred to use pop() or shift() instead
+
