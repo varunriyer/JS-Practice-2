@@ -136,3 +136,20 @@ console.log(arr);
 var obj = '{ "name": "Love", "age": 33 }';
 console.log(JSON.parse(obj));
 
+//ES6 JS Version
+
+//let keyword
+
+let x = 10;
+console.log(x);
+{
+    let x = 2;
+    console.log(x);
+}
+{
+    let x = 4;
+    console.log(x);
+    x = 7; //can update the value of variable even inside the same block
+    console.log(x);
+    // let x = 10; //--> cannot redeclare the value within the same block
+}
