@@ -174,3 +174,8 @@ console.log(arr.indexOf(3) + 1); // returns 2 (we can add +1 for the position as
 console.log(arr.indexOf(3, 3)); // returns 5 ( we have specfied to start searching the element from the 3rd index)
 console.log(arr.indexOf(2)); // returns -1 (element is not present in the array)
 
+//Array lastIndexOf() - similar to indexOf but used for last occurence
+arr = [0, 2, 4, 6, 8, 4];
+console.log(arr.lastIndexOf(4)) // returns 5
+console.log(arr.lastIndexOf(4, -2)); // returns 2 (we have specifed to start searching the element from -2 index i.e 8)
+
