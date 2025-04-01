@@ -231,3 +231,4 @@ console.log(arr.sort(function (a, b) { return a - b })); //returns sorted array 
 console.log(arr.sort(function (a, b) { return b - a })); // returns sorted array in descending order 
 
 
+
