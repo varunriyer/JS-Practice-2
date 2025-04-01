@@ -119,3 +119,20 @@ var Guest = {
 
 var fullName = User.fullName.bind(Guest);
 console.log(fullName());
+
+//Trailing Commas 
+var obj = {
+    name: "Joe",
+    age: 22,
+    gender: "M", //Trailing commas allowed in objects
+};
+console.log(obj);
+
+var arr = [1, 2, 3, 4, 5, 6, 7,]; //Trailing commas allowed in arrays 
+console.log(arr);
+
+// console.log(JSON.parse(obj)); - not allowed as JSON does not support trailing commas
+
+var obj = '{ "name": "Love", "age": 33 }';
+console.log(JSON.parse(obj));
+
