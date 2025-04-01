@@ -150,4 +150,13 @@ new_arr = arr.toSpliced(2, 1); //The toSliced() fucntion removes the element and
 console.log(new_arr);
 console.log(arr); //The original array is unchanged 
 
+//slice() - slices out a piece of an array into a new array 
+arr = [1, 2, 3, 4, 5];
+new_arr = arr.slice(2);
+console.log(new_arr); //slices out elements in index 0,1 and returns output - [ 3, 4, 5 ]
+console.log(arr); //original array is not affected; Output - [ 1, 2, 3, 4, 5 ]
+
+arr = [9, 8, 7, 6, 5];
+console.log(arr.slice(2, 4)); //returns elements from index 2 to 3(4-1) ; Output - [7,6]
+console.log(arr); //Original array unaffected
 
