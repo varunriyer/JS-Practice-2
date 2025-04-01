@@ -186,3 +186,18 @@ console.log(arr.includes(10)); //returns false
 console.log(arr.includes(NaN)); //returns true
 console.log(arr.indexOf(NaN)); //returns -1 even though NaN is present in the array 
 
+//Array find() function - returns the value of the first array element that passes a test function 
+arr = [4, 5, 6, 7, 8, 21];
+console.log(arr.find(great5));
+
+function great5(value, index, array) {
+    return value > 5;
+}
+
+//findIndex() - returns the index of the first array element that passes a test function 
+arr = [1, 2, 3, 4, 5];
+console.log(arr.findIndex(even)); // returns 1 as the first index (2) is the first even number
+
+function even(value, index, arr) {
+    return value % 2 == 0;
+}
