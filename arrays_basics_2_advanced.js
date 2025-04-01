@@ -106,4 +106,15 @@ arr1 = [0, 1, 2, 3, 4];
 arr2 = [5, 6, 7, 8, 9];
 arr3 = [-1];
 console.log(arr1.concat(arr2));
-console.log(arr2.concat(arr1, arr3));
+console.log(arr2.concat(arr1, arr3)); //You can also pass a string as an argument to concat instead of an array
+
+//copyWithin() function - copies array elements to another position in an array 
+
+arr = ["a", "b", "c", "d", "e"];
+console.log(arr.copyWithin(2, 0)); // Copy to index 2, all elements from index 0 ; Output - [ 'a', 'b', 'a', 'b', 'c' ]
+arr = ["a", "b", "c", "d", "e", "f"];
+console.log(arr.copyWithin(2, 0, 3)); // Copy to index 2, the elements from index 0 to 2(3-1) ; Output - [ 'a', 'b', 'a', 'b', 'c', 'f' ]
+
+
+
+
