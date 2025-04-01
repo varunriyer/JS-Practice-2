@@ -161,6 +161,24 @@ console.log(d)
 // {
 //      const d = "b";
 //      d = "c"; --> cannot reassign value to a const variable even outside the scope 
-    
+
 // }
 
+//Arrow Functions 
+var x = function (x, y) { // functions needed to be written ellaborately in ES5 
+    return x * y;
+}
+
+console.log(x(2, 3));
+
+
+var x = (x, y) => x * y; // from ES6 we can now use Arrow functions to perform the same function with a short syntax. No function keyword, no return and no curly brackets
+console.log(x(2, 7));
+
+//although it is better to keep the return statement and the curly brackets as it can only be omitted when it is a single statement. It is also good practice to use the const keyword for functions always as the function expression is always a constant value.
+
+const test_func = (x, y) => {
+    mul = x * y;
+    return (mul / 2);
+}
+console.log(test_func(10, 3));
