@@ -75,3 +75,19 @@ for (var x in Fruit) {
     txt += Fruit[x] + " ";
 }
 console.log(txt);
+
+//Object.create()
+
+var person = {
+    name: "Kyrie",
+    age: 32,
+    job: "Athlete"
+};
+
+console.log(person);
+
+var per1 = Object.create(person);
+per1.name = "James";
+per1.age = 22;
+console.log(per1);
+
