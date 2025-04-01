@@ -165,3 +165,12 @@ console.log(arr); //Original array unaffected
 arr = ["Jam", "Butter", "Honey"];
 console.log(arr.toString()); // Output - Jam,Butter,Honey
 
+// Array Searching 
+
+//Array indexOf() - searches an array for an element value and returns its position 
+arr = [1, 3, 5, 7, 9, 3];
+console.log(arr.indexOf(3)); // returns 1 (1st index)
+console.log(arr.indexOf(3) + 1); // returns 2 (we can add +1 for the position as array index starts count from 0 )
+console.log(arr.indexOf(3, 3)); // returns 5 ( we have specfied to start searching the element from the 3rd index)
+console.log(arr.indexOf(2)); // returns -1 (element is not present in the array)
+
