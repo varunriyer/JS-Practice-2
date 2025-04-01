@@ -54,4 +54,24 @@ var person = {
 console.log(person.language);
 
 person.lang = "hindi";
-console.log(person.language)
+console.log(person.language);
+
+//Object.defineProperty()
+
+var Fruit = {
+    color: "Red",
+    seed: true
+};
+
+Object.defineProperty(Fruit, "flower", {
+    value: "Yes",
+    writable: true,
+    enumerable: true,
+    configurable: true
+});
+
+var txt = "";
+for (var x in Fruit) {
+    txt += Fruit[x] + " ";
+}
+console.log(txt);
