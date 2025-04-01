@@ -1,0 +1,57 @@
+var str = "   Hello world!!     ";
+console.log(str.trim());
+
+//forEach()
+var txt = "";
+var numbers = [45, 2, 10, 32, 10];
+numbers.forEach(myFunction);
+
+function myFunction(key) {
+    txt = txt + key * 2 + " ";
+}
+console.log(txt);
+console.log(" ");
+console.log(numbers);
+
+
+// Property getters and setters 
+var person = {
+    firstName: "John",
+    lastName: "Doe",
+    get fullName() {
+        return this.firstName + " " + this.lastName;
+    }
+};
+
+console.log(person.fullName);
+
+var person = {
+    name: "Helen",
+    age: 23,
+    language: "No",
+    get lang() {
+        return this.language;
+    },
+    set lang(value) {
+        this.language = value;
+    }
+};
+
+person.lang = "en";
+
+console.log(person.lang);
+
+//setter method to convert language to UPPERCASE 
+
+var person = {
+    name: "Jane",
+    age: 22,
+    language: "NULL",
+    set lang(value) {
+        this.language = value.toUpperCase();
+    }
+};
+console.log(person.language);
+
+person.lang = "hindi";
+console.log(person.language)
