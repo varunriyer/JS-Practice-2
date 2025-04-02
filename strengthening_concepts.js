@@ -29,5 +29,5 @@
 {
     let temps = [18, 43, -4, 23, 5];
     console.log(temps.map(c => (c * 9 / 5) + 32));
-
+    temps.forEach(c => console.log((c * 9 / 5) + 32)); //how forEach would work for the same question
 }
