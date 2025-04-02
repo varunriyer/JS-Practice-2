@@ -1,4 +1,7 @@
 //forEach() method - forEach() method basically gives the values based on the function. It does not change the original array.
+
+const { name } = require("./export_test");
+
 //Find the square of all numbers present in array
 {
     let arr = [1, 2, 3, 4, 5];
@@ -36,4 +39,10 @@
 {
     let nums = [1, 2, 3, 4, 5];
     console.log(nums.map(cube => cube ** 3));
+}
+
+// Create an array of strings in the format "Name: [name], Age: [age] from objects"
+{
+    let person = [{ name: "Varun", age: 22 }, { name: "Samuel", age: 43 }];
+    console.log(person.map(user => `${user.name} - ${user.age} years old`));
 }
