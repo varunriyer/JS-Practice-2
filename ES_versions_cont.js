@@ -106,7 +106,7 @@ console.log(Array.from(`123,ere,test`));
 
 //END OF ES6
 
-//Start of ECMA2016 
+//Start of ECMAScript 2016 
 
 // JS Exponentiation 
 {
@@ -124,3 +124,12 @@ console.log(Array.from(`123,ere,test`));
     y **= 2;
     console.log(y); // 16
 }
+
+//Array.includes()
+{
+    let nums = [1, 3, 5, 7, 9];
+    console.log(nums.includes(3)); //true
+    console.log(nums.includes(8)); //false
+}
+
+//End of ECMAScript 2016  
