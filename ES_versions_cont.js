@@ -115,4 +115,12 @@ console.log(Array.from(`123,ere,test`));
     console.log(x ** -2); //0.04
     console.log(x ** 0); //1
     console.log(25 ** (1 / 2)); //5
+
+    //JS Exponentiation works in the same way as Math.pow
+    console.log(Math.pow(x, 2)); //25
+
+    //Exponentitation Assignment 
+    let y = 4;
+    y **= 2;
+    console.log(y); // 16
 }
