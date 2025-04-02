@@ -272,3 +272,18 @@ var arr = [1, 1, 2, 33, 3, 3, 4, 4, 5];
 var newSet = [... new Set(arr)];
 console.log(newSet);
 
+//JS Classes 
+
+class Car {
+    constructor(name, year) {
+        this.name = name;
+        this.year = year;
+    }
+};
+
+var car1 = new Car("Ford", 2021);
+var car2 = new Car("Tata", 2003);
+
+console.log(car1);
+console.log(car2);
+
