@@ -254,3 +254,21 @@ for (var x of nums) {
     sum += x;
 }
 console.log(sum);
+
+// You can also loop over a string using for/of loop 
+var str = "JavaScript";
+var txt = "";
+for (var x of str) {
+    txt += x;
+}
+console.log(txt);
+
+//Sets with JavaScript 
+
+var mySet = new Set([1, 2, 3, 3, 4]);
+console.log(mySet); // only displays unique values 
+
+var arr = [1, 1, 2, 33, 3, 3, 4, 4, 5];
+var newSet = [... new Set(arr)];
+console.log(newSet);
+
