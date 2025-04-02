@@ -71,7 +71,17 @@ console.log(Array.from(`123,ere,test`));
 
 //New Number Properties 
 {
-    console.log(Number.EPSILON);
-    console.log(Number.MIN_SAFE_INTEGER);
-    console.log(Number.MAX_SAFE_INTEGER);
+    console.log(Number.EPSILON); //2.220446049250313e-16
+    console.log(Number.MIN_SAFE_INTEGER); //-9007199254740991
+    console.log(Number.MAX_SAFE_INTEGER); //9007199254740991
+}
+
+//isInteger() &* isSafeInteger() methods 
+{
+    console.log(Number.isInteger(21)); //true
+    console.log(Number.isInteger(-21)); //true
+    console.log(Number.isInteger(21.3)); //false
+    console.log(Number.isInteger(10 / 2)); //true
+    console.log(Number.isInteger(21 / 5)); //flase
+    console.log(Number.isInteger("3")); //false
 }
