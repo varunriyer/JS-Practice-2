@@ -103,3 +103,16 @@ console.log(Array.from(`123,ere,test`));
     console.log(isNaN("Hello")); //true
     console.log(isNaN(10 / 0)); //false 
 }
+
+//END OF ES6
+
+//Start of ECMA2016 
+
+// JS Exponentiation 
+{
+    let x = 5;
+    console.log(x ** 2); //25
+    console.log(x ** -2); //0.04
+    console.log(x ** 0); //1
+    console.log(25 ** (1 / 2)); //5
+}
