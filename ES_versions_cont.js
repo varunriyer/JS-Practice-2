@@ -45,3 +45,12 @@ console.log(Array.from(`123,ere,test`));
     console.log(first); //5
 }
 
+//New Math methods
+{
+    //Math.trunc - integer part of a value
+    console.log(Math.trunc(3.14)); //3
+    console.log(Math.trunc(-3.14)); //-3
+    console.log(Math.trunc(3.74)); //3
+
+
+}
