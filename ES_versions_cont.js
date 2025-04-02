@@ -59,4 +59,8 @@ console.log(Array.from(`123,ere,test`));
     console.log(Math.sign("hello")); // NaN
 
 
+    //Math.cbrt - returns cube rrot of x 
+    console.log(Math.cbrt(27)); //3
+    console.log(Math.cbrt(-15)); //-2.666....
+    console.log(Math.cbrt("Test")); //NaN
 }
