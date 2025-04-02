@@ -210,3 +210,29 @@ console.log(a, b, rest);
 var [a, , , ...rest] = arr;
 console.log(a, rest);
 
+//Object Destructuring - revision 
+
+var obj = { a: 1, b: 2 };
+var { a, b } = obj;
+console.log(a, b);
+
+//Using Spread operator to convert array into object 
+var arr = ["cat", "bat", "mat"];
+var obj = { ...arr };
+console.log(obj); // automatically assigns keys 0,1,2
+
+var arr = [3, 4, 5];
+function sum(v1, v2, v3) {
+    return v1 + v2 + v3;
+};
+console.log(sum(...arr));
+
+var person = {
+    name: "Loki",
+    age: 31,
+    company: "xyz",
+};
+
+console.log({ ...person, name: "Justin" }); //Spread operator can be used in the given way to update properties of object 
+
+console.log({ name: "James", company: "abc", ...person }); // This will prrint person as it is without overriding
