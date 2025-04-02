@@ -84,4 +84,10 @@ console.log(Array.from(`123,ere,test`));
     console.log(Number.isInteger(10 / 2)); //true
     console.log(Number.isInteger(21 / 5)); //flase
     console.log(Number.isInteger("3")); //false
+
+    console.log(Number.isSafeInteger(45)); //true
+    console.log(Number.isSafeInteger(-393993)); //true
+    console.log(Number.isSafeInteger(2222222222222222222222222)); //false
+    console.log(Number.isSafeInteger(2.3)); //false
 }
+
