@@ -52,5 +52,11 @@ console.log(Array.from(`123,ere,test`));
     console.log(Math.trunc(-3.14)); //-3
     console.log(Math.trunc(3.74)); //3
 
+    //Math.sign - returns if x is negative, null or positive 
+    console.log(Math.sign(3.2)); //1 
+    console.log(Math.sign(-3)); //-1
+    console.log(Math.sign(0)); //0 
+    console.log(Math.sign("hello")); // NaN
+
 
 }
