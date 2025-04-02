@@ -91,3 +91,10 @@ console.log(Array.from(`123,ere,test`));
     console.log(Number.isSafeInteger(2.3)); //false
 }
 
+//New Global Methods
+{
+    //isFinite() 
+    console.log(isFinite(10 / 2)); //true
+    console.log(isFinite(10 / 0)); //false
+    console.log(isFinite("test")); //false
+}
