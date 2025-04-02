@@ -274,16 +274,28 @@ console.log(newSet);
 
 //JS Classes 
 
-class Car {
+class Cars {
     constructor(name, year) {
         this.name = name;
         this.year = year;
     }
 };
 
-var car1 = new Car("Ford", 2021);
-var car2 = new Car("Tata", 2003);
+var car1 = new Cars("Ford", 2021);
+var car2 = new Cars("Tata", 2003);
 
 console.log(car1);
 console.log(car2);
 
+//String.includes()
+
+var str = "This is a test snippet!";
+console.log(str.includes("test"));
+
+//String.startsWith()
+console.log(str.startsWith("That"));
+console.log(str.startsWith("This"));
+console.log(str.startsWith("this"));
+
+//String.endsWith()
+console.log(str.endsWith("!"));
