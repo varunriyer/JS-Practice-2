@@ -68,3 +68,10 @@ console.log(Array.from(`123,ere,test`));
     console.log(Math.log2(19));
     console.log(Math.log10(100));
 }
+
+//New Number Properties 
+{
+    console.log(Number.EPSILON);
+    console.log(Number.MIN_SAFE_INTEGER);
+    console.log(Number.MAX_SAFE_INTEGER);
+}
