@@ -63,4 +63,8 @@ console.log(Array.from(`123,ere,test`));
     console.log(Math.cbrt(27)); //3
     console.log(Math.cbrt(-15)); //-2.666....
     console.log(Math.cbrt("Test")); //NaN
+
+    //Math.log2 and Math.log10 - logarithm of x with base 2 and 10 respectively
+    console.log(Math.log2(19));
+    console.log(Math.log10(100));
 }
