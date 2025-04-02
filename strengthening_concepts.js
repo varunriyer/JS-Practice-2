@@ -5,3 +5,8 @@
     arr.forEach(num => console.log(num ** 2));
 }
 
+//Append '!' to each sring
+{
+    let str = ["Hello", "World"];
+    str.forEach(x => console.log(x + "!"));
+}
