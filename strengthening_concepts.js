@@ -46,3 +46,10 @@ const { name } = require("./export_test");
     let person = [{ name: "Varun", age: 22 }, { name: "Samuel", age: 43 }];
     console.log(person.map(user => `${user.name} - ${user.age} years old`));
 }
+
+//reduce() method - it reduces all the values of an array into a single value. It does not change the original array.
+//Calculate the total amount of a shopping cart 
+{
+    let cart = [{ item: "Milk", price: 40 }, { item: "Bread", price: 52 }];
+    console.log(cart.reduce((total, x) => total + x.price, 0));
+}
