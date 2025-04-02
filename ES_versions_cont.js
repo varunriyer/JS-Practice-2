@@ -133,3 +133,14 @@ console.log(Array.from(`123,ere,test`));
 }
 
 //End of ECMAScript 2016  
+
+//Start of ECMAScript 2017
+
+//String Padding
+{
+    let text = "7";
+    console.log(text.padStart(4, 0)); //0007
+    console.log(text.padStart(3, "x")); //xx3
+    console.log("3".padEnd(4, 1)); //3111
+    console.log(text.padEnd(5, "x")); //7xxxx
+}
