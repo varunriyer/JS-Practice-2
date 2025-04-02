@@ -23,3 +23,11 @@
     let ages = [13, 15, 17, 21, 23, 49, 4, 9];
     console.log(ages.filter(age => age >= 18))
 }
+
+//map() method - provides the new array and maps the condition provided to each value of the array. It does not modify the original array.
+//Convert an array with temp in C to F 
+{
+    let temps = [18, 43, -4, 23, 5];
+    console.log(temps.map(c => (c * 9 / 5) + 32));
+
+}
