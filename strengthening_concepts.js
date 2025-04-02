@@ -17,3 +17,9 @@
     let nums = [1, 2, 3, 4, 5, 6, 7];
     console.log(nums.filter(num => num % 2 != 0));
 }
+
+//Filter out all the ages which are greater than or equal 18 
+{
+    let ages = [13, 15, 17, 21, 23, 49, 4, 9];
+    console.log(ages.filter(age => age >= 18))
+}
