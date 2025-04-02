@@ -93,8 +93,13 @@ console.log(Array.from(`123,ere,test`));
 
 //New Global Methods
 {
-    //isFinite() 
+    //isFinite() - returns false if it is not finite number
     console.log(isFinite(10 / 2)); //true
     console.log(isFinite(10 / 0)); //false
     console.log(isFinite("test")); //false
+
+    //isNaN() - returns true if the argument is Not a Number 
+    console.log(isNaN(90 / 23)); //false
+    console.log(isNaN("Hello")); //true
+    console.log(isNaN(10 / 0)); //false 
 }
