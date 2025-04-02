@@ -8,3 +8,7 @@
     }
 }
 
+//Array.from()
+
+console.log(Array.from("ABCDEFG"));
+console.log(Array.from(`123,ere,test`));
