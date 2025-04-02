@@ -235,4 +235,22 @@ var person = {
 
 console.log({ ...person, name: "Justin" }); //Spread operator can be used in the given way to update properties of object 
 
-console.log({ name: "James", company: "abc", ...person }); // This will prrint person as it is without overriding
+console.log({ name: "James", company: "abc", ...person }); // This will print person as it is without overriding
+
+//For/of loop - Looping over an Array 
+
+var cars = ["BMW", "Volvo", "Skoda"];
+var txt = "";
+for (var x of cars) { //for of loop in JS 
+    txt += x + " ";
+}
+console.log(txt);
+
+//for/of loop another example
+
+var nums = [2, 5, 9, 77, 0];
+var sum = 0;
+for (var x of nums) {
+    sum += x;
+}
+console.log(sum);
