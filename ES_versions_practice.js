@@ -184,4 +184,13 @@ const test_func = (x, y) => {
 console.log(test_func(10, 3));
 
 // Object Destructuring
+var person = {
+    firstName: "Jimmy",
+    lastName: "McGill",
+    age: 50,
+    job: "lawyer"
+};
 
+console.log(person);
+var { firstName, age } = person;
+console.log(firstName, age);
