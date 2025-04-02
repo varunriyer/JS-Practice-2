@@ -24,3 +24,24 @@ console.log(Array.from(`123,ere,test`));
     }
     console.log(txt);
 }
+
+//Array find() - returns value of first element satisifying the condition
+{
+    let arr = [9, 8, 7, 6, 5, 21, 47];
+    let first = arr.find(first_occ);
+    function first_occ(value, index, arr) {
+        return value > 18
+    }
+    console.log(first); //21
+}
+
+//Array findIndex() - returns first index satisifying the condition 
+{
+    let arr = [9, 8, 7, 6, 5, 21, 47];
+    let first = arr.findIndex(first_occ);
+    function first_occ(value, index, arr) {
+        return value > 18
+    }
+    console.log(first); //5
+}
+
