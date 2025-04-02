@@ -31,3 +31,9 @@
     console.log(temps.map(c => (c * 9 / 5) + 32));
     temps.forEach(c => console.log((c * 9 / 5) + 32)); //how forEach would work for the same question
 }
+
+//Use map to calculate the cube of all the numbers in the array 
+{
+    let nums = [1, 2, 3, 4, 5];
+    console.log(nums.map(cube => cube ** 3));
+}
