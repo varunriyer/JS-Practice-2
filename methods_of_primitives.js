@@ -25,3 +25,10 @@
     console.log(checkTruthyFalsy(0));
 }
 
+//Wrapper Object Behaviour 
+{
+    let str = "hello";
+    str.test = "world"; // A temporary wrapper object is created, and 'test' is set on it.
+    console.log(str.test); // A new temporary wrapper object is created, but 'test' does not exist, so undefined is returned.     
+}
+
