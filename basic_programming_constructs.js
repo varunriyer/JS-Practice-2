@@ -241,3 +241,31 @@ Average Grade: 88.75 */
     console.log(`Average grade: ${avg}`);
 
 }
+
+/* Object Methods - Create an object named calculator with the following methods:
+add(a, b): Returns the sum of two numbers.
+subtract(a, b): Returns the difference between two numbers.
+multiply(a, b): Returns the product of two numbers.
+
+Use these methods to perform calculations:
+Add 5 and 10.
+Subtract 15 from 20.
+Multiply 6 by 7.
+
+Expected Output:
+Sum: 15
+Difference: 5
+Product: 42 */
+
+{
+    let calc = {
+        add(num1, num2) { return `${num1} + ${num2} is = ${num1 + num2}`; },
+        subtract(num1, num2) { return `${num1} - ${num2} is = ${num1 - num2}`; },
+        multiply(num1, num2) { return `${num1} * ${num2} is = ${num1 * num2}`; },
+        divide(num1, num2) { return num2 === 0 ? `Not allowed` : `${num1} / ${num2} is = ${num1 / num2}`; }
+    };
+    console.log(calc.add(5, 10));
+    console.log(calc.subtract(20, 15));
+    console.log(calc.multiply(6, 7));
+    console.log(calc.divide(3, 3));
+}
