@@ -162,5 +162,17 @@ City: San Francisco */
         age: 25,
         city: "New York"
     }
+
     console.log(`My name is ${person.name}. I am ${person.age} years old and I live in ${person.city}.`);
+
+    let { name, age, city } = person; //Using destructuring makes the code cleaner and more optimal
+    console.log(`My name is ${name}. I am ${age} years old and I live in ${city}.`);
+
+    person.occupation = "Engineer";
+    console.log(`My occupation is: ${person.occupation}`);
+
+    person.city = "San Francisco";
+    console.log(`Now I live in ${person.city}`);
+
+    console.log(person);
 }
