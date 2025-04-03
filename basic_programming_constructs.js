@@ -119,3 +119,14 @@
         console.log(`Sum of ${num1} + ${num2} is equal to ${num1 + num2}`);
     })(3, 5);
 }
+
+//Bonus Question - Write an arrow function as an IIFE that calculates the factorial of a number passed as an argument.
+{
+    ((num) => {
+        let fact = 1;
+        for (let i = 1; i <= num; i++) {
+            fact *= i;
+        }
+        console.log(`The factorial of ${num} is ${fact}`);
+    })(5);
+}
