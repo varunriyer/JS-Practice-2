@@ -78,3 +78,10 @@
         console.log("This runs immediately!");
     })();
 }
+
+//IIFE with parameter
+{
+    (function (name) {
+        console.log(`Hello ${name}`);
+    })("Alice");
+}
