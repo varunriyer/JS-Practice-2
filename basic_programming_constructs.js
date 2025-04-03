@@ -26,3 +26,10 @@
             break;
     }
 }
+
+//Reverse a string while keeping the words intact - practising this question as I just remembered about it 
+{
+    let str = "Hello World !!";
+    let result = str.split(" ").reverse().join(" ");
+    console.log(result);
+}
