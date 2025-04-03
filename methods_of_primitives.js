@@ -32,3 +32,16 @@
     console.log(str.test); // A new temporary wrapper object is created, but 'test' does not exist, so undefined is returned.     
 }
 
+// Chaining Methods 
+{
+    //Write a function that takes a string of comma-seperated numbers, split it into an array, convert each number to it's square and convert it back to string seperated by commas
+    function update_str(str) {
+        // let arr = str.split(",");
+        // arr = arr.map(x => x ** 2);
+        // let new_str = arr.toString();
+        // return new_str;
+        let arr = str.split(",").map(x => Number(x) ** 2); //Optimal way to write using chaining methods
+        return arr.toString();
+    }
+    console.log(update_str(`1,2,3,4,5,hi,"4"`));
+}
