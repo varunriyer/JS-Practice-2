@@ -41,3 +41,10 @@
     console.log(calcArea(5, 2));
 
 }
+
+//Double the values of an array (use map and arrow functions)
+{
+    let arr = [1, 2, 3, 4, 0, 7];
+    let double = arr.map(x => x * 2);
+    console.log(double);
+}
