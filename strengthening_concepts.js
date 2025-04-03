@@ -63,3 +63,12 @@
     }, {});
     console.log(grouped);
 }
+
+//Checking if a function is a typeof of object
+{
+    function greet(name) {
+        return `Yooo ${name}`;
+    }
+    console.log(greet("Jeremy"));
+    console.log(typeof (greet)); //returns function 
+}
