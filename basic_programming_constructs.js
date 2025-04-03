@@ -92,3 +92,12 @@
         console.log("This is IIFE with arrow function");
     })();
 }
+
+//Use IIFE to display the current date and time 
+{
+
+    (() => {
+        let date = new Date()
+        console.log(`Current date and time is: ${date}`);
+    })();
+}
