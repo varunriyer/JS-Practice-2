@@ -197,3 +197,47 @@ email: bob@example.com */
         console.log(key + ":" + user[key]);
     }
 }
+
+/*Nested objects - Create an object named student with the following structure:
+const student = {
+  name: "Charlie",
+  grades: {
+    math: 90,
+    science: 85,
+    english: 88
+  }
+};
+
+Write code to:
+Access and log the student's science grade.
+Add a new subject (history) with a grade of 92.
+Calculate the average grade across all subjects.
+
+Expected Output:
+Science Grade: 85
+History Grade Added.
+Average Grade: 88.75 */
+
+{
+    let student = {
+        name: "Charlie",
+        grades: {
+            math: 90,
+            science: 85,
+            english: 88
+        }
+    };
+
+    let { name, grades } = student;
+    let { math, science, english } = grades;
+
+    console.log(`Name: ${name}`)
+    console.log(`Science grade: ${science}`);
+
+    grades.history = 92;
+    console.log(`History grade added`);
+    let total = Object.values(grades).reduce((sum, grade) => sum + grade, 0)
+    let avg = total / Object.keys(student.grades).length;
+    console.log(`Average grade: ${avg}`);
+
+}
