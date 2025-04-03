@@ -85,3 +85,10 @@
         console.log(`Hello ${name}`);
     })("Alice");
 }
+
+//IIFE with arrow functions
+{
+    (() => {
+        console.log("This is IIFE with arrow function");
+    })();
+}
