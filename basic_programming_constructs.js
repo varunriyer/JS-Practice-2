@@ -124,9 +124,19 @@
 {
     ((num) => {
         let fact = 1;
-        for (let i = 1; i <= num; i++) {
+        for (let i = 1; i <= num; i++) { //Optimal way is to use recursion but recursion fails inside an IIFE
             fact *= i;
         }
         console.log(`The factorial of ${num} is ${fact}`);
     })(5);
+}
+
+//Factorial of a number using recursion - not using IIFE
+{
+    let factorial = (num => {
+        if (num === 0 || num === 1) return 1;
+        return num * factorial(num - 1);
+    });
+    let num = 7;
+    console.log(`The factorial of ${num} is ${factorial(num)} `);
 }
