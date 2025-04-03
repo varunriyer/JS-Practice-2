@@ -69,3 +69,12 @@
     concat_strings("Hello", "World");
     concat_strings("3", "4");
 }
+
+//Immediately Invoked Function Expression (IIFE) - functions executed immediately after it is defined.
+//IIFE is typically wrapped inside parantheses to make it an expression, followed by () to invoke it immediately 
+//It is used to avoid polluting the global scope, encapsulation and to execute code immediately 
+{
+    (function () {
+        console.log("This runs immediately!");
+    })();
+}
