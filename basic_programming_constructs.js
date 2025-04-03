@@ -56,3 +56,9 @@
     isEven(18);
     isEven(0);
 }
+
+//Bonus Question - Given an array of numbers, find the sum of all even numbers after doubling them.
+{
+    let final_sum = (nums) => console.log(nums.filter(num => num % 2 == 0).map(num => num * 2).reduce((x, sum) => sum + x));
+    final_sum([1, 2, 3, 4, 5, 6]);
+}
