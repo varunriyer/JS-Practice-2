@@ -140,3 +140,27 @@
     let num = 7;
     console.log(`The factorial of ${num} is ${factorial(num)} `);
 }
+
+//Mastering working with Objects 
+/*Create and Access Object Properties - Create an object named person with the following properties:
+name: "Alice"
+age: 25
+city: "New York"
+
+Write code to:
+Access and log the name and age properties.
+Add a new property occupation with the value "Engineer".
+Update the city property to "San Francisco".
+
+Expected Output:
+Alice is 25 years old.
+Occupation: Engineer
+City: San Francisco */
+{
+    let person = {
+        name: "Alice",
+        age: 25,
+        city: "New York"
+    }
+    console.log(`My name is ${person.name}. I am ${person.age} years old and I live in ${person.city}.`);
+}
