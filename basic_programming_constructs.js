@@ -161,7 +161,7 @@ City: San Francisco */
         name: "Alice",
         age: 25,
         city: "New York"
-    }
+    };
 
     console.log(`My name is ${person.name}. I am ${person.age} years old and I live in ${person.city}.`);
 
@@ -175,4 +175,25 @@ City: San Francisco */
     console.log(`Now I live in ${person.city}`);
 
     console.log(person);
+}
+
+/* Iterate Over Object Properties
+
+Write code to:
+Iterate over all properties using a for...in loop.
+Log each property name and its value in the format: "key: value".
+
+Expected Output:
+name: Bob
+age: 30
+email: bob@example.com */
+{
+    let user = {
+        name: "Bob",
+        age: 30,
+        email: "bob@xyz.com"
+    };
+    for (let key in user) {
+        console.log(key + ":" + user[key]);
+    }
 }
