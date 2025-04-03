@@ -48,3 +48,11 @@
     let double = arr.map(x => x * 2);
     console.log(double);
 }
+
+//Write an arrow function to create a function isEven() which takes a number and returns true or false if it is even or not respectively
+{
+    let isEven = (num) => console.log(num % 2 == 0 ? true : false);
+    isEven(7);
+    isEven(18);
+    isEven(0);
+}
