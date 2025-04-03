@@ -112,3 +112,10 @@
 
     //console.log(counter); - This would result in an error as counter is not in this scope and is part of the private scope of the function 
 }
+
+//Parameterized IIFE - Write an IIFE that accepts two numbers as arguments, adds them together, and logs the result.
+{
+    (function (num1, num2) {
+        console.log(`Sum of ${num1} + ${num2} is equal to ${num1 + num2}`);
+    })(3, 5);
+}
