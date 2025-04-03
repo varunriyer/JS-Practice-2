@@ -19,10 +19,13 @@
 //Boolean wrapper in JS 
 {
     function checkTruthyFalsy(x) {
-        if (x === 0) return "falsy";
-        else return "truthy";
+        return x ? "truthy" : "falsy";
     }
+    console.log(checkTruthyFalsy("test"));
     console.log(checkTruthyFalsy(0));
+    console.log(checkTruthyFalsy(NaN));
+    console.log(checkTruthyFalsy(7));
+    console.log(checkTruthyFalsy(undefined));
 }
 
 //Wrapper Object Behaviour 
