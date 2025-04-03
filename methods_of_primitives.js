@@ -15,3 +15,13 @@
     console.log(typeof (new_num));
     console.log((Number(new_num)).toExponential());
 }
+
+//Boolean wrapper in JS 
+{
+    function checkTruthyFalsy(x) {
+        if (x === 0) return "falsy";
+        else return "truthy";
+    }
+    console.log(checkTruthyFalsy(0));
+}
+
