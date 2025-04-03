@@ -62,3 +62,10 @@
     let final_sum = (nums) => console.log(nums.filter(num => num % 2 == 0).map(num => num * 2).reduce((x, sum) => sum + x));
     final_sum([1, 2, 3, 4, 5, 6]);
 }
+
+//Use arrow functions to concatenate two strings 
+{
+    let concat_strings = (str1, str2) => console.log(str1 + " " + str2);
+    concat_strings("Hello", "World");
+    concat_strings("3", "4");
+}
