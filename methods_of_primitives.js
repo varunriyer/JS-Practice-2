@@ -7,3 +7,11 @@
     console.log(new_str.toLowerCase().includes('javascript'));
     console.log(new_str);
 }
+
+//Input a number and provide the number rounded to 2 decimal points and convert the number to exponentiation format 
+{
+    let num = 3.14109231;
+    let new_num = num.toFixed(2); //toFixed converts into a string
+    console.log(typeof (new_num));
+    console.log((Number(new_num)).toExponential());
+}
