@@ -33,3 +33,11 @@
     let result = str.split(" ").reverse().join(" ");
     console.log(result);
 }
+
+//Mastering Arrow functions 
+{
+    //Use arrow function to create a function which calculates area
+    let calcArea = (length, width) => length * width;
+    console.log(calcArea(5, 2));
+
+}
