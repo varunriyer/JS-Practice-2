@@ -101,3 +101,14 @@
         console.log(`Current date and time is: ${date}`);
     })();
 }
+
+//Use an IIFE to create a private scope. Write an IIFE that declares a variable counter and increments it by 1. The variable should not be accessible outside the IIFE.
+{
+    (function () {
+        let counter = 0;
+        counter++;
+        console.log(`Counter value is ${counter}`);
+    })();
+
+    //console.log(counter); - This would result in an error as counter is not in this scope and is part of the private scope of the function 
+}
