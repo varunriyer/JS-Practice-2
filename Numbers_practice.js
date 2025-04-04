@@ -85,3 +85,25 @@ Throws an error if n is negative. */
     console.log(mathOperations(-3));
     console.log(mathOperations(64));
 }
+
+/* Question 5: Working with Special Values
+Write a function checkNumberType that:
+Accepts a number and checks if it is:
+NaN (use Number.isNaN())
+Finite (use Number.isFinite())
+Safe integer (use Number.isSafeInteger())
+Infinity (use !Number.isFinite())
+Returns an object with these boolean checks. */
+{
+    function checkNumberType(num) {
+        return {
+            isNaN: Number.isNaN(num),
+            isFinite: Number.isFinite(num),
+            isSafe: Number.isSafeInteger(num),
+            isInfinity: !Number.isFinite(num)
+        };
+    };
+    console.log(checkNumberType(42));
+    console.log(checkNumberType(NaN));
+    console.log(checkNumberType(Infinity));
+}
