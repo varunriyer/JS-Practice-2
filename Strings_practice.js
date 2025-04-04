@@ -59,3 +59,20 @@ Returns both results as an object. */
     };
     console.log(extractSubstring("JavaScript is powerful", 0, 10));
 }
+
+/* Question 
+Write a function cleanAndPadString that:
+
+Takes a string as input.
+
+Removes extra spaces from both ends using .trim().
+
+Pads the cleaned string to 20 characters using .padStart() and .padEnd().
+
+Returns the padded result. */
+{
+    function cleanAndPadString(str) {
+        return str.trim().padStart(20, " ").padEnd(20, " ");
+    };
+    console.log(cleanAndPadString("    Hello     "));
+}
