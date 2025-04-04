@@ -47,11 +47,10 @@ Write a function splitAllWords that:
 Takes an array of sentences (strings).
 Uses flatMap() to split each sentence into words and returns a single array of all words. */
 
-// {
-//     function splitAllWords(arr_str){
-//         return  arr_str.flatMap()
-//     }
-// }
+{
+    const splitAllWords = (sentences) => sentences.flatMap(sentence => sentence.split(" "));
+    console.log(splitAllWords(["Hello World", "JavaScript is fun"]));
+}
 
 /* Question 2: Expand Numbers into Pairs
 Write a function expandNumbers that:
@@ -64,3 +63,4 @@ Uses flatMap() to return a new array where each number is replaced by itself and
     };
     console.log(expandNumbers([1, 2, 3, 4, 5]));
 }
+
