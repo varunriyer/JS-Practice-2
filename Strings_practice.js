@@ -44,3 +44,18 @@ Splits the string into an array of words using .split(). */
     };
     console.log(processString("Learning JS is fun!"));
 }
+
+/*Question 5: Substring and Slice
+Write a function extractSubstring that:
+Takes a string and two indices (start, end) as inputs.
+Extracts a substring using .substring() and .slice().
+Returns both results as an object. */
+{
+    function extractSubstring(str, start, end) {
+        return {
+            substringResult: str.substring(start, end),
+            sliceResult: str.slice(start, end)
+        }
+    };
+    console.log(extractSubstring("JavaScript is powerful", 0, 10));
+}
