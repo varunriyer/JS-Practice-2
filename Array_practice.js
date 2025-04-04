@@ -41,3 +41,26 @@
     console.log(pos);
     console.log(temp.includes(42, -1));
 }
+
+/* Question 1: Split Sentences into Words
+Write a function splitAllWords that:
+Takes an array of sentences (strings).
+Uses flatMap() to split each sentence into words and returns a single array of all words. */
+
+// {
+//     function splitAllWords(arr_str){
+//         return  arr_str.flatMap()
+//     }
+// }
+
+/* Question 2: Expand Numbers into Pairs
+Write a function expandNumbers that:
+Takes an array of numbers.
+Uses flatMap() to return a new array where each number is replaced by itself and its square. */
+{
+    function expandNumbers(nums) {
+        return nums.flatMap(x => [x, x ** 2]);
+
+    };
+    console.log(expandNumbers([1, 2, 3, 4, 5]));
+}
