@@ -29,3 +29,18 @@ Returns an object with the results.*/
     };
     console.log(searchSubstring("JavaScript is awesome", "awesome"));
 }
+
+/* Question 3: Replace and Split
+Write a function processString that:
+Takes a string as input.
+Replaces all occurrences of "JS" with "JavaScript" using .replace() or .replaceAll().
+Splits the string into an array of words using .split(). */
+{
+    function processString(str) {
+        return {
+            replacedString: str.replace("JS", "JavaScript"),
+            wordsArray: str.split(" ")
+        }
+    };
+    console.log(processString("Learning JS is fun!"));
+}
