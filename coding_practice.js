@@ -34,3 +34,8 @@ console.log(areBracketsBalanced("[a{b(c)d}e]a"));
     let average = marks.reduce((sum, mark) => sum + mark, 0) / marks.length;
     console.log(`Average marks of subjects = ${average}`);
 }
+{
+    for (let i = 1; i <= 100; i++) {
+        if (i % 2 == 0) { console.log(i) }
+    }
+}
