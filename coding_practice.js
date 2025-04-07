@@ -15,3 +15,8 @@ function areBracketsBalanced(str) {
     return check_arr.length === 0;
 }
 console.log(areBracketsBalanced("[a{b(c)d}e]a"));
+{
+    let a = 1;
+    let b = true;
+    console.log(a == b);
+}
