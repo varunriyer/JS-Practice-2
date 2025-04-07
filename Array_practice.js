@@ -64,3 +64,57 @@ Uses flatMap() to return a new array where each number is replaced by itself and
     console.log(expandNumbers([1, 2, 3, 4, 5]));
 }
 
+{
+    let str = "Hello,World";
+    let arr1 = str.split(" ");
+    let arr2 = Array.from(str);
+    console.log(arr1);
+    console.log(arr2);
+    let pair = arr1.entries();
+    for (let [index, value] of pair) {
+        console.log(index, value);
+    }
+    let concat_arr = [...arr1, ...arr2]
+    console.log(concat_arr);
+}
+{
+    let num = 3.414;
+    console.log(num.toFixed(2), num.toPrecision());
+}
+{
+    let arr = [2, 3, 4, 5, 6];
+    console.log(arr.fill(2));
+    console.log(arr);
+}
+{
+    let str = "hello,world";
+    console.log(str.split("o"));
+}
+{
+    let arr = [1, 2, 3, 4, 5];
+    console.log(arr.with(2, 1));
+    console.log(arr);
+    let str = "Hello";
+    console.log(str.replaceAll("l", "w"));
+}
+{
+    let name = "W3Schools";
+
+    // Destructuring
+    let [a1, , a2, , a3, , a4, , a5] = name;
+    console.log(a1, a2, a3, a4, a5);
+
+    let a = "Hello";
+    let b = "World!";
+    [a, b] = [b, a];
+    console.log(a, b);
+}
+{
+    a = 5;
+    console.log(a);
+    var a;
+}
+{
+    let str = "Hello today i,s a good day";
+    console.log(str.split(/[o, ]/));
+}
