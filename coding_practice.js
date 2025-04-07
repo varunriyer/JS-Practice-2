@@ -54,3 +54,20 @@ console.log(areBracketsBalanced("[a{b(c)d}e]a"));
     sum_of_digits(123);
     sum_of_digits(560);
 }
+{
+    //Print all prime number upto n 
+    function prime_print(n) {
+
+        for (let i = 2; i <= n; i++) {
+            let isPrime = true;
+            for (let j = 2; j <= Math.sqrt(i); j++) {
+                if (i % j == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime) { console.log(i); }
+        }
+    }
+    prime_print(10);
+}
