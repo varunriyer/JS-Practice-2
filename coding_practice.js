@@ -39,3 +39,18 @@ console.log(areBracketsBalanced("[a{b(c)d}e]a"));
         if (i % 2 == 0) { console.log(i) }
     }
 }
+{
+    //Sum of digits of a given number 
+    function sum_of_digits(num) {
+        let temp_num = num;
+        let sum = 0;
+        while (temp_num > 0) {
+            let digit = temp_num % 10;
+            temp_num = Math.floor(temp_num / 10);
+            sum += digit;
+        }
+        console.log(`Sum of digits of ${num} is equal to ${sum}`);
+    }
+    sum_of_digits(123);
+    sum_of_digits(560);
+}
