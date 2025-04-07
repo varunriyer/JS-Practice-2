@@ -71,3 +71,20 @@ console.log(areBracketsBalanced("[a{b(c)d}e]a"));
     }
     prime_print(10);
 }
+{
+    //Fibonacci upto n
+    fibonacci_print(7);
+
+    function fibonacci_print(n) {
+        let a = 0, b = 1;
+        if (a <= n) console.log(a);
+        if (b <= n) console.log(b);
+        while (true) {
+            let c = a + b;
+            if (c > n) break;
+            console.log(c);
+            a = b;
+            b = c;
+        }
+    }
+}
