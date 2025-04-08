@@ -88,3 +88,45 @@ console.log(areBracketsBalanced("[a{b(c)d}e]a"));
         }
     }
 }
+{
+    //Function to check if 2 numbers are divisble by each other 
+
+}
+{
+    function countAndDisplayDigitFrequency(arr) {
+        const frequency = {};
+
+        // Loop through array of objects
+        for (let obj of arr) {
+            // Get the digit value (e.g., '1', '4', '7') from the object
+            const digit = Object.values(obj)[0];
+
+            // Count frequency
+            if (frequency[digit]) {
+                frequency[digit]++;
+            } else {
+                frequency[digit] = 1;
+            }
+        }
+
+        // Display formatted output
+        for (let digit in frequency) {
+            const count = frequency[digit];
+            const label = count === 1 ? 'occurrence' : 'occurrences';
+            console.log(`${digit} --> ${count} ${label}`);
+        }
+    }
+
+    const data = [
+        { 0: '1' },
+        { 1: '4' },
+        { 2: '7' },
+        { 3: '1' },
+        { 4: '4' },
+        { 5: '7' },
+        { 6: '1' },
+        { 7: '0' }
+    ];
+    countAndDisplayDigitFrequency(data);
+
+}
